@@ -1,0 +1,73 @@
+
+body {
+  background-color: lightgray;
+}
+
+.box {
+  border: 1px solid white ;
+}
+
+#Top_Half{
+  max-width: 1500px;
+  height: 600px;
+
+  background-image: url('../../../../Resources/office.jpg');
+
+}
+#Bottom_Half{
+  max-width: 1500px;
+  height: 200px;
+  background-color: white;
+
+}
+#large_logo{
+  font-size: 60px;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+#small_logo{
+  font-size: 35px;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+#button-container{
+  position: relative;
+  max-width: 200px;
+  height: 50px;
+  background-color: lightgray;
+  width: 50%;
+  margin-top:10px;
+  margin-left:40%;
+
+}
+
+.signup-button {
+  position: relative;
+  display: block;
+  line-height: 40px;
+  font-size: 16px;
+  height: 50px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background: #fd935c;
+  border-bottom: 2px solid #cf7e3b;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 550px;
+
+}

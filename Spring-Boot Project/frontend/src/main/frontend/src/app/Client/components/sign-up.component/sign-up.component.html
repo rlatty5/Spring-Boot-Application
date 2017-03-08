@@ -1,0 +1,58 @@
+<div style="height: 600px;">
+<table style="border: 0; width: 100%;">
+ <tr style="height: 600px;">
+    <td style="width: 30%; background: whitesmoke;">
+
+
+
+      <div class="container">
+        <form name="sign-up-form" id="contact" action="" method="post">
+          <h3>Welcome {{name}}!</h3>
+          <h3>GET {{getData}}!</h3>
+          <h3>POST {{postData}}!</h3>
+          <fieldset>
+            <input [(ngModel)]="name" name="name"
+                   placeholder="Your name" type="text" tabindex="1" required autofocus >
+          </fieldset>
+          <fieldset>
+            <input [(ngModel)]="email" name="email"
+                   placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input [(ngModel)]="phone" name="phone"
+                   placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+          </fieldset>
+          <fieldset>
+            <input [(ngModel)]="college" name="college"
+                   placeholder="College/University" type="text" tabindex="4" required>
+          </fieldset>
+          <select [(ngModel)]="major" name="major" class="form-control" id="major" tabindex="5" required>
+            <option *ngFor="let major of majors" [value]="major">{{major}}</option>
+          </select>
+          <fieldset>
+            <input [(ngModel)]="gpa" name="gpa"
+                   placeholder="Grade Point Average (4.0 scale)" type="text" tabindex="6">
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Tell us about some of your interests...." tabindex="5"></textarea>
+          </fieldset>
+          <fieldset>
+            <button (click)="submit()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+
+        </form>
+        
+      </div>
+
+
+
+
+    </td>
+    <td style="width: 70%; background: black;">
+      <css-carousel></css-carousel>
+
+    </td>
+  </tr>
+  <tr> <td colspan="2" style="background: #006DA6;">Footer</td> </tr>
+</table>
+</div>

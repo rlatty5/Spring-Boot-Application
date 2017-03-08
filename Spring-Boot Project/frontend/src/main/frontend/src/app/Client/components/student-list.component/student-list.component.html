@@ -1,0 +1,20 @@
+<table style="width:100%; ">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>College</th>
+    <th>Major</th>
+    <th>GPA</th>
+
+  </tr>
+  <tr *ngFor="let student of studentList">
+    <th>{{student.name}}</th>
+    <th>{{student.email}}</th>
+    <th>{{student.phone}}</th>
+    <th>{{student.college}}</th>
+    <th>{{student.major}}</th>
+    <th>{{student.gpa}}</th>
+
+  </tr>
+</table>
